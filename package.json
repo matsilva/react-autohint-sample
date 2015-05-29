@@ -1,14 +1,14 @@
 {
-  "name": "autohint-sample",
+  "name": "react-autohint-sample",
   "version": "1.0.0",
-  "description": "sample of autohint",
+  "description": "sample of autohint done in react",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/matsilva/autohint-sample"
+    "url": "https://github.com/matsilva/react-autohint-sample"
   },
   "author": "Mat Silva",
   "license": "GNU",

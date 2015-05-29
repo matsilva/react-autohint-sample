@@ -1,7 +1,7 @@
 # react-autohint-sample
 
 ##The Challenge
-Create an auto hints to a search input using the following API endpoint: `http://mock-autocomplete.herokuapp.com/autocomplete?q=v`
+Create an auto hint for a search input using the following API endpoint: `http://mock-autocomplete.herokuapp.com/autocomplete?q=v`
 
 ###Bonus points
 * Allow the user to select from a drop down list using the up and down arrows
