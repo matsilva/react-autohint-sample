@@ -22,3 +22,4 @@ Add nice styles to the demo in a rapid fashion.
 ###Step-2
 * Demonstrate extracting component
 * Demonstrate props & propTypes
+* Demonstrate React.findDOMNode
