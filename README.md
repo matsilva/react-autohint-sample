@@ -20,4 +20,5 @@ Add nice styles to the demo in a rapid fashion.
 * http://getbootstrap.com/getting-started/
 
 ###Step-1
-Boiler plate and search input is added
+* Demonstrates initial React component
+* Demonstrates React rendering
