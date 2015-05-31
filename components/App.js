@@ -3,11 +3,22 @@
  */
 
 var React = require('react');
+var request = require('superagent');
+
+//Components
+//***********
+var SearchInput = require('./search-input');
+
 
 var AutohintApp = React.createClass({
 
     sendSearchValue: function(val) {
-        console.log(val);
+        request
+            .get('http://mock-autocomplete.herokuapp.com/autocomplete')
+            .query({q: val})
+            .end(function(err, res) {
+                console.log(res.body.data);
+            });
     },
 
     render: function() {
@@ -24,27 +35,7 @@ var AutohintApp = React.createClass({
 
 });
 
-var SearchInput = React.createClass({
 
-    propTypes: {
-        sendSearchValue: React.PropTypes.func.isRequired,
-    },
-
-    getSearchValue: function() {
-        var searchInput = React.findDOMNode(this.refs.search);
-        var searchVal = searchInput.value;
-        this.props.sendSearchValue(searchVal);
-    },
-
-    render: function() {
-        return (
-            <div className="input-field col s12">
-                <input onChange={this.getSearchValue} name="search" placeholder="enter a city?" ref="search" type="text" />
-            </div>
-        );
-    }
-
-});
 
 
 

@@ -15,7 +15,9 @@
   "dependencies": {
     "lodash": "^3.5.0",
     "react": "^0.13.3",
-    "react-hot-loader": "^1.2.7"
+    "react-hot-loader": "^1.2.7",
+    "superagent": "^1.2.0",
+    "webpack": "^1.9.10"
   },
   "devDependencies": {
     "jsx-loader": "^0.12.2",
