@@ -8,6 +8,7 @@ var ResultsList = React.createClass({
 
     propTypes: {
         results: React.PropTypes.array.isRequired,
+        activeIndex: React.PropTypes.number.isRequired,
     },
 
     getResultItem: function(result) {
@@ -16,9 +17,10 @@ var ResultsList = React.createClass({
 
     render: function() {
 
-        var listItems = this.props.results.map(function(result) {
+        var listItems = this.props.results.map(function(result, i) {
+            var itemClass = this.props.activeIndex === i ? "collection-item active" : "collection-item";
             return (
-                <a key={result} ref={result} href="javscript:void(0);" onClick={this.getResultItem.bind(this, result)} className="collection-item">{result}</a>
+                <a key={result} ref={result} href="javscript:void(0);" onClick={this.getResultItem.bind(this, result)} className={itemClass}>{result}</a>
             );
         }.bind(this));
 

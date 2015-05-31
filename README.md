@@ -19,8 +19,7 @@ Add nice styles to the demo in a rapid fashion.
 * http://materializecss.com/getting-started.html
 * http://getbootstrap.com/getting-started/
 
-###Step-4
-* Added results list component
-* Demonstrate component state
-* Addresses keys in React
-* Demonstrates passing data to click handler
+###Step-5
+* Add up and down arrows for selections
+* Demonstrate dumb components
+* Demonstrate dynamic css classes

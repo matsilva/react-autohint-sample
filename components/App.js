@@ -16,6 +16,7 @@ var AutohintApp = React.createClass({
     getInitialState: function() {
         return {
             results: [],
+            activeIndex: -1,
         };
     },
 
@@ -30,13 +31,26 @@ var AutohintApp = React.createClass({
             }.bind(this));
     },
 
+    selectItem: function(index) {
+        if (index === -1 && this.state.activeIndex === -1) {
+            return;
+        }
+        var newIndex = index + this.state.activeIndex;
+
+        if (newIndex >= this.state.results.length) {
+            return;
+        }
+
+        this.setState({activeIndex: newIndex});
+    },
+
     render: function() {
         return (
             <div className="row">
                 <div className="col s4 offset-s4">
                     <div className="row">
-                        <SearchInput sendSearchValue={this.sendSearchValue} />
-                        {this.state.results.length ? <ResultsList results={this.state.results} /> : null}
+                        <SearchInput selectItem={this.selectItem} sendSearchValue={this.sendSearchValue} />
+                        {this.state.results.length ? <ResultsList activeIndex={this.state.activeIndex} results={this.state.results} /> : null}
                     </div>
                 </div>
             </div>
