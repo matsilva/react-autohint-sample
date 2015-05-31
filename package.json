@@ -13,9 +13,9 @@
   "author": "Mat Silva",
   "license": "GNU",
   "dependencies": {
-    "jquery": "^2.1.3",
     "lodash": "^3.5.0",
-    "react": "^0.12.2"
+    "react": "^0.12.2",
+    "react-hot-loader": "^1.2.7"
   },
   "devDependencies": {
     "jsx-loader": "^0.12.2",

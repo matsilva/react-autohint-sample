@@ -18,3 +18,6 @@ Create an auto hint for a search input using the following API endpoint: `http:/
 Add nice styles to the demo in a rapid fashion.
 * http://materializecss.com/getting-started.html
 * http://getbootstrap.com/getting-started/
+
+###Step-1
+Boiler plate and search input is added
