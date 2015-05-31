@@ -20,4 +20,5 @@ Add nice styles to the demo in a rapid fashion.
 * http://getbootstrap.com/getting-started/
 
 ###Step-3
-Added superagent for xhr and seperate search input component 
+* Demonstrate handling props in parent component
+* Demonstrate requiring components
