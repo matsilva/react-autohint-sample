@@ -28,7 +28,7 @@ var ResultsList = React.createClass({
         return (
             <div>
                 <div className="collection">
-                    <ReactCSSTransitionGroup transitionName="result" transitionAppear="true">
+                    <ReactCSSTransitionGroup transitionName="result" transitionAppear={true}>
                         {listItems}
                     </ReactCSSTransitionGroup>
                 </div>
