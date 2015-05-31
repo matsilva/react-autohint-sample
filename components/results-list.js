@@ -2,7 +2,8 @@
  * @jsx React.DOM
  */
 
-var React = require('react');
+var React = require('react/addons');
+var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 
 var ResultsList = React.createClass({
 
@@ -27,7 +28,9 @@ var ResultsList = React.createClass({
         return (
             <div>
                 <div className="collection">
-                    {listItems}
+                    <ReactCSSTransitionGroup transitionName="result" transitionAppear="true">
+                        {listItems}
+                    </ReactCSSTransitionGroup>
                 </div>
             </div>
         );

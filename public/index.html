@@ -4,6 +4,34 @@
         <title>react autohint sample</title>
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+        <style>
+            .result-enter {
+                transform: translateX(-300px);
+                transition: transform 1s ease-in;
+            }
+
+            .result-enter.result-enter-active {
+                transform: translateX(0px);
+            }
+
+            .result-leave {
+                opacity: 1;
+                transition: opacity .5 ease-in;
+            }
+
+            .result-leave.result-leave-active {
+                opacity: 0.01;
+            }
+
+            .result-appear {
+                opacity: 0.01;
+                transition: opacity .5s ease-in;
+            }
+
+            .result-appear.result-appear-active {
+                opacity: 1;
+            }
+        </style>
     </head>
     <body>
         <!-- Autohint app container -->

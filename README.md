@@ -19,7 +19,5 @@ Add nice styles to the demo in a rapid fashion.
 * http://materializecss.com/getting-started.html
 * http://getbootstrap.com/getting-started/
 
-###Step-6
-* Demonstrate performance enhancements
-* Add debounce to keystrokes
-* Cancel previous xhr requests
+###Step-7
+* Demonstrate animations with React
