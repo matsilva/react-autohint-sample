@@ -19,5 +19,6 @@ Add nice styles to the demo in a rapid fashion.
 * http://materializecss.com/getting-started.html
 * http://getbootstrap.com/getting-started/
 
-###Step-1
-Boiler plate and search input is added
+###Step-2
+* Demonstrate extracting component
+* Demonstrate props & propTypes
