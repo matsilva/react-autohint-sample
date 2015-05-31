@@ -19,7 +19,7 @@ Add nice styles to the demo in a rapid fashion.
 * http://materializecss.com/getting-started.html
 * http://getbootstrap.com/getting-started/
 
-###Step-5
-* Add up and down arrows for selections
-* Demonstrate dumb components
-* Demonstrate dynamic css classes
+###Step-6
+* Demonstrate performance enhancements
+* Add debounce to keystrokes
+* Cancel previous xhr requests

@@ -3,6 +3,7 @@
  */
 
 var React = require('react');
+var _ = require('lodash');
 
 var SearchInput = React.createClass({
 
@@ -14,6 +15,7 @@ var SearchInput = React.createClass({
     getSearchValue: function() {
         var searchInput = React.findDOMNode(this.refs.search);
         var searchVal = searchInput.value;
+
         this.props.sendSearchValue(searchVal);
     },
     handleKeyDown: function(e) {
@@ -34,7 +36,7 @@ var SearchInput = React.createClass({
             <div className="input-field col s12">
                 <input 
                 onKeyDown={this.handleKeyDown}
-                onChange={this.getSearchValue} 
+                onChange={_.debounce(this.getSearchValue, 500)} 
                 name="search" placeholder="enter a city?" 
                 ref="search" 
                 type="text" />

@@ -17,18 +17,26 @@ var AutohintApp = React.createClass({
         return {
             results: [],
             activeIndex: -1,
+            previousFlight: null,
         };
     },
 
     sendSearchValue: function(val) {
-        request
+        if (this.state.previousFlight) {
+            this.state.previousFlight.abort();
+        }
+
+        var newFlight = request
             .get('http://mock-autocomplete.herokuapp.com/autocomplete')
             .query({q: val})
             .end(function(err, res) {
                 this.setState({
-                    results: res.body.data
+                    results: res.body.data,
+                    previousFlight: null,
                 });
             }.bind(this));
+
+        this.setState({previousFlight: newFlight});
     },
 
     selectItem: function(index) {
