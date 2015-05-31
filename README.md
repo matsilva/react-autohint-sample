@@ -19,5 +19,8 @@ Add nice styles to the demo in a rapid fashion.
 * http://materializecss.com/getting-started.html
 * http://getbootstrap.com/getting-started/
 
-###Step-3
-Added superagent for xhr and seperate search input component 
+###Step-4
+* Added results list component
+* Demonstrate component state
+* Addresses keys in React
+* Demonstrates passing data to click handler
