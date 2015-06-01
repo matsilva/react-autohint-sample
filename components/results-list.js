@@ -20,7 +20,7 @@ var ResultsList = React.createClass({
         var listItems = this.props.results.map(function(result, i) {
             var itemClass = this.props.activeIndex === i ? "collection-item active" : "collection-item";
             return (
-                <a key={result} ref={result} href="javscript:void(0);" onClick={this.getResultItem.bind(this, result)} className={itemClass}>{result}</a>
+                <a key={result.name + Math.random()} ref={result.name} href="javscript:void(0);" onClick={this.getResultItem.bind(this, result.name)} className={itemClass}>{result.name}</a>
             );
         }.bind(this));
 

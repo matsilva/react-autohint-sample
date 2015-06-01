@@ -4,6 +4,7 @@
 
 var React = require('react');
 var request = require('superagent');
+var _ = require('lodash');
 
 //Components
 //***********
@@ -22,11 +23,11 @@ var AutohintApp = React.createClass({
 
     sendSearchValue: function(val) {
         request
-            .get('http://mock-autocomplete.herokuapp.com/autocomplete')
+            .get('http://localhost:3000/cities')
             .query({q: val})
             .end(function(err, res) {
                 this.setState({
-                    results: res.body.data
+                    results: _.take(res.body, 10)
                 });
             }.bind(this));
     },
