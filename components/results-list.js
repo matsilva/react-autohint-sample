@@ -18,7 +18,7 @@ var ResultsList = React.createClass({
 
         var listItems = this.props.results.map(function(result) {
             return (
-                <a key={result} ref={result} href="javscript:void(0);" onClick={this.getResultItem.bind(this, result)} className="collection-item">{result}</a>
+                <a key={result.name + Math.random()} ref={result.name} href="javscript:void(0);" onClick={this.getResultItem.bind(this, result.name)} className="collection-item">{result.name}</a>
             );
         }.bind(this));
 
