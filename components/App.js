@@ -14,10 +14,10 @@ var AutohintApp = React.createClass({
 
     sendSearchValue: function(val) {
         request
-            .get('http://mock-autocomplete.herokuapp.com/autocomplete')
+            .get('http://localhost:3000/cities')
             .query({q: val})
             .end(function(err, res) {
-                console.log(res.body.data);
+                console.log(res.body);
             });
     },
 
