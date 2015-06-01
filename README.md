@@ -1,13 +1,46 @@
 # react-autohint-sample
 
 ##The Challenge
-Create an auto hint for a search input using the following API endpoint: `http://mock-autocomplete.herokuapp.com/autocomplete?q=v`
+Create an auto hint for a search input using the following API endpoint information: `http://localhost:3000/cities?q=vienna`
 
-*Endpoint response* for `q=v` will look like...
+**Endpoint response** for `q=vienna` will look like...
 
 ```
-{"data":["Vanuatu","Vatican City","Venezuela","Vermont","Vietnam"]}
+[
+  {
+    "name": "Vienna"
+  },
+  {
+    "name": "Vienna"
+  },
+  {
+    "name": "New Vienna"
+  },
+  {
+    "name": "Vienna"
+  },
+  {
+    "name": "South Vienna"
+  },
+  {
+    "name": "Vienna"
+  },
+  {
+    "name": "New Vienna"
+  },
+  {
+    "name": "Vienna"
+  },
+  {
+    "name": "Vienna"
+  }
+]
 ```
+
+### Setup endpoint locally
+* Install by running `sudo npm install json-sever -g` in your terminal
+* Start the endpoint server by running `json-server --watch db.json` in current dir.
+* Note: it can serve a ton of cities, so taking only a few will be wise
 
 ###Bonus points
 * Allow the user to select from a drop down list using the up and down arrows
